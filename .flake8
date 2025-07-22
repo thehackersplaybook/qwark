@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 88
+exclude = 
+    tests/,
+    test_*.py,
+    .git,
+    __pycache__,
+    .venv,
+    venv/,
+    build/,
+    dist/,
+    *.egg-info/
+ignore = E203, W503, D100, D101, D205, D400
