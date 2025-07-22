@@ -4,13 +4,13 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "qwark"
-version = "0.1.0"
-description = "Query optimization module - Project not released yet"
+version = "0.0.1"
+description = "SQL Query optimization module written in Python. Project not released yet"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Aditya Patange (AdiPat)", email = "contact.adityapatange@gmail.com"},
 ]
 classifiers = [
     "Development Status :: 1 - Planning",
