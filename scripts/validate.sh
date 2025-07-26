@@ -15,6 +15,10 @@ echo "Running lint checks..."
 echo "Running tests..."
 "${BASH_SOURCE%/*}/test.sh"
 
+# Run security checks
+echo "Running security checks..."
+"${BASH_SOURCE%/*}/security.sh"
+
 # Check package structure
 echo "Checking package structure..."
 python -c "

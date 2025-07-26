@@ -24,7 +24,8 @@ show_help() {
     echo -e "  ${YELLOW}--lint${NC}        Run linting checks (mypy, flake8, docstrings)"
     echo -e "  ${YELLOW}--format${NC}      Format code with black"
     echo -e "  ${YELLOW}--test${NC}        Run tests with pytest"
-    echo -e "  ${YELLOW}--validate${NC}    Run all validation checks (format, lint, test)"
+    echo -e "  ${YELLOW}--security${NC}    Run security scans with bandit"
+    echo -e "  ${YELLOW}--validate${NC}    Run all validation checks (format, lint, test, security)"
     echo ""
     echo -e "${GREEN}Examples:${NC}"
     echo "  ./run.sh --help"
@@ -78,6 +79,9 @@ case "$1" in
         ;;
     --test)
         run_script "test"
+        ;;
+    --security)
+        run_script "security"
         ;;
     --validate)
         run_script "validate"
